@@ -14,7 +14,8 @@ enhance security. The project employs a range of ML classification algorithms, 
 Forest (RF), Light Gradient Boosting Machine (LGBM), and
 Extreme Gradient Boosting (XGB). These algorithms are used
 both individually and in ensemble to classify and predict various
-types of network attacks. The DS2OS dataset, which includes
+types of network attacks. The [DS2OS Dataset](https://www.kaggle.com/datasets/libamariyam/ds2os-dataset)
+, which includes
 ’normal’ and ’anomalous’ network traffic, is used for this study.
 The performance of the classifiers was evaluated based on the
 accuracy, Receiver Operating Characteristic (ROC), runtime,
