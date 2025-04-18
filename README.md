@@ -1,31 +1,54 @@
-# IDS-IOT-ML
-DESIGN OF AN INTRUSION DETECTION MODEL FOR IOT-ENABLED SMART HOME USING LGBM CLASSIFIER
+# Intrusion Detection Model for IoT-Enabled Smart Homes 
 
-In the era of the Internet of Things (IoT), security
-has become a paramount concern due to the increasing number of
-devices communicating with each other using different protocols.
-However, these devices often lack the processing power to ensure
-safety, necessitating a significant improvement in our current
-methods of protecting IoT networks. Machine learning (ML)
-has emerged as a promising solution for securing IoT systems.
-This project presents the design of an intrusion detection model
-for IoT-enabled smart homes, leveraging machine learning to
-enhance security. The project employs a range of ML classification algorithms, including Logistic Regression (LR), Random
-Forest (RF), Light Gradient Boosting Machine (LGBM), and
-Extreme Gradient Boosting (XGB). These algorithms are used
-both individually and in ensemble to classify and predict various
-types of network attacks. The [DS2OS Dataset](https://www.kaggle.com/datasets/libamariyam/ds2os-dataset)
-, which includes
-’normal’ and ’anomalous’ network traffic, is used for this study.
-The performance of the classifiers was evaluated based on the
-accuracy, Receiver Operating Characteristic (ROC), runtime,
-and confusion matrix. The LGBM ensemble classifier was found
-to have better performance. The proposed intrusion detection
-model, ”LGB-IDS,” was validated using ensemble techniques,
-such as majority voting. The main objective of this project is to
-propose the design of an efficient intrusion detection model with
-high accuracy, better time efficiency, and a reduced false alarm
-rate. The proposed model achieves an accuracy of 99.5% and
-has a time efficiency that is much higher than those of other
-prevalent algorithm-based models.
+## 📌 Overview
+
+This project presents a machine learning-based Intrusion Detection System (IDS) designed for IoT-enabled smart homes. With the rise of IoT devices, ensuring the security of network traffic has become increasingly important. The proposed solution uses various ML classifiers, with a focus on **Light Gradient Boosting Machine (LGBM)**, to detect and classify network intrusions based on the **DS2OS dataset**.
+
+## 🚀 Features
+
+- Detection of anomalous and normal traffic in IoT networks
+- Comparison of multiple ML algorithms:  
+  - Logistic Regression (LR)  
+  - Random Forest (RF)  
+  - LightGBM (LGBM)  
+  - XGBoost (XGB)  
+- Ensemble learning using majority voting
+- Performance evaluation using:
+  - Accuracy
+  - ROC Curve
+  - Confusion Matrix
+  - Runtime
+
+## 📊 Results
+
+- **LGBM-based model (LGB-IDS)** achieved **99.5% accuracy**
+- Improved time efficiency and significantly reduced false alarm rate
+- Ensemble voting further enhanced the model's reliability
+
+## 🛠️ Tech Stack
+
+- Python
+- Scikit-learn
+- LightGBM
+- XGBoost
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- Jupyter Notebook / VS Code
+
+## 📁 Dataset
+
+- **Name**: [DS2OS Dataset](https://www.kaggle.com/datasets/libamariyam/ds2os-dataset) (Distributed Smart Space Orchestration System)  
+- **Description**: Includes labeled network traffic for normal and anomalous behaviors  
+- 
+
+## 🧠 Model Training & Evaluation
+
+1. Data Preprocessing:
+   - Handling missing values
+   - Feature selection & normalization
+2. Training individual classifiers
+3. Hyperparameter tuning
+4. Evaluation using metrics (accuracy, confusion matrix, ROC curve)
+5. Ensemble majority voting
+
 
